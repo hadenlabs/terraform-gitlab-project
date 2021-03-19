@@ -21,11 +21,18 @@ terraform gitlab repository
 ## Usage
 
 ```hcl
-  module "main" {
-    source = "github.com/hadenlabs/terraform-gitlab-repository"
 
-    name        = "repository-example"
+   module "main" {
+      source = "hadenlabs/repository/gitlab"
+      version = "0.0.0"
 
+      providers = {
+        gitlab = gitlab
+      }
+
+      name        = "repository-example"
+      description = "gitlab project"
+      visibility  = "public"
   }
 
 ```
@@ -38,7 +45,18 @@ Full working example can be found in [example](./example) folder.
 
 ```hcl
 
+  module "main" {
+      source = "hadenlabs/repository/gitlab"
+      version = "0.0.0"
 
+      providers = {
+        gitlab = gitlab
+      }
+
+      name        = "repository-example"
+      description = "gitlab project"
+      visibility  = "public"
+  }
 
 ```
 
@@ -52,21 +70,31 @@ This document gives an overview of variables used in the platform of the terrafo
 
 | Name      | Version |
 | --------- | ------- |
-| terraform | >= 0.13 |
+| terraform | >= 0.14 |
+| gitlab    | >=3.5.0 |
+| local     | >=1.3.0 |
 
 ## Providers
 
-No provider.
+| Name   | Version |
+| ------ | ------- |
+| gitlab | >=3.5.0 |
 
 ## Inputs
 
-| Name | Description                                        | Type       | Default | Required |
-| ---- | -------------------------------------------------- | ---------- | ------- | :------: |
-| tags | This is to help you add tags to your cloud objects | `map(any)` | `null`  |    no    |
+| Name | Description | Type | Default | Required |
+| --- | --- | --- | --- | :-: |
+| description | The description of the repository. | `string` | n/a | yes |
+| name | The name of the repository. | `string` | n/a | yes |
+| settings | Create and manage settings. | `map(any)` | `{}` | no |
+| tags | topics or tags of project. | `list(string)` | `[]` | no |
+| visibility | The visibility of the repository private or public. | `string` | `"private"` | no |
 
 ## Outputs
 
-No output.
+| Name     | Description             |
+| -------- | ----------------------- |
+| instance | output instance project |
 
 ## Help
 
