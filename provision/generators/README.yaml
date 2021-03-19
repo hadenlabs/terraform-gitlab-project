@@ -7,6 +7,15 @@
 # Name of this project
 name: terraform-gitlab-repository
 
+# Tags of this project
+tags:
+  - gitlab
+  - repository
+
+# Categories of this project
+categories:
+  - terraform-modules/github
+
 email:
   support: support@hadenlabs.com
 
@@ -39,11 +48,18 @@ description: |-
 usage: |-
 
   ```hcl
-    module "main" {
-      source = "github.com/hadenlabs/terraform-gitlab-repository"
 
-      name        = "repository-example"
+     module "main" {
+        source = "hadenlabs/repository/gitlab"
+        version = "0.0.0"
 
+        providers = {
+          gitlab = gitlab
+        }
+
+        name        = "repository-example"
+        description = "gitlab project"
+        visibility  = "public"
     }
 
   ```
