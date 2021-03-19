@@ -25,8 +25,8 @@ badges:
     image: 'https://github.com/hadenlabs/terraform-gitlab-repositoryactions/workflows/lint.yml/badge.svg?branch=develop'
     url: 'https://github.com/hadenlabs/terraform-gitlab-repository/actions'
   - name: 'Issues'
-    image: "https://img.shields.io/github/issues/hadenlabs/terraform-gitlab-repository.svg"
-    url: "https://github.com/hadenlabs/terraform-gitlab-repository/issues"
+    image: 'https://img.shields.io/github/issues/hadenlabs/terraform-gitlab-repository.svg'
+    url: 'https://github.com/hadenlabs/terraform-gitlab-repository/issues'
   - name: 'Latest Release'
     image: 'https://img.shields.io/github/release/hadenlabs/terraform-gitlab-repository.svg'
     url: 'https://github.com/hadenlabs/terraform-gitlab-repository/releases'
