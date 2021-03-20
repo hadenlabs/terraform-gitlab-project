@@ -1,8 +1,8 @@
 {
-  "name": "terraform-gitlab-repository",
-  "version": "0.1.0",
-  "description": "terraform gitlab repository",
-  "repository": "ssh://git@github.com/hadenlabs/terraform-gitlab-repository.git",
+  "name": "terraform-gitlab-project",
+  "version": "0.0.0",
+  "description": "terraform gitlab project",
+  "repository": "ssh://git@github.com/hadenlabs/terraform-gitlab-project.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
   "license": "MIT",
   "engines": {

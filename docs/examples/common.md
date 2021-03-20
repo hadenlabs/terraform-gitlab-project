@@ -3,14 +3,14 @@
 ```hcl
 
   module "main" {
-      source = "hadenlabs/repository/gitlab"
+      source = "hadenlabs/project/gitlab"
       version = "0.1.0"
 
       providers = {
         gitlab = gitlab
       }
 
-      name        = "repository-example"
+      name        = "project-example"
       description = "gitlab project"
       visibility  = "public"
   }

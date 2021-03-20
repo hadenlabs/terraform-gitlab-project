@@ -1,11 +1,11 @@
-variable "repository_name" {
+variable "project_name" {
   type        = string
-  description = "The name of the repository."
+  description = "The name of the project."
 }
 
-variable "repository_description" {
+variable "project_description" {
   type        = string
-  description = "description of repository."
+  description = "description of project."
   default     = ""
 }
 
