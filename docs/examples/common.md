@@ -4,7 +4,7 @@
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.1.0"
+      version = "0.1.1"
 
       providers = {
         gitlab = gitlab
