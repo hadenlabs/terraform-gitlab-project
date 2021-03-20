@@ -1,4 +1,4 @@
-site_name: terraform-gitlab-repository Documentation
+site_name: terraform-gitlab-project Documentation
 theme: 'material'
 markdown_extensions:
   - toc:
@@ -15,8 +15,8 @@ extra:
   font:
     text: 'Source Sans Pro'
 
-repo_name: 'hadenlabs/terraform-gitlab-repository'
-repo_url: 'https://github.com/hadenlabs/terraform-gitlab-repository'
+repo_name: 'hadenlabs/terraform-gitlab-project'
+repo_url: 'https://github.com/hadenlabs/terraform-gitlab-project'
 
 google_analytics:
   - ''

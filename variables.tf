@@ -1,16 +1,16 @@
 variable "name" {
   type        = string
-  description = "The name of the repository."
+  description = "The name of the project."
 }
 
 variable "description" {
   type        = string
-  description = "The description of the repository."
+  description = "The description of the project."
 }
 
 variable "visibility" {
   type        = string
-  description = "The visibility of the repository private or public."
+  description = "The visibility of the project private or public."
   default     = "private"
 }
 

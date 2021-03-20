@@ -1,5 +1,5 @@
-# ~/.tmuxinator/terraform-gitlab-repository.yml
-name: terraform-gitlab-repository
+# ~/.tmuxinator/terraform-gitlab-project.yml
+name: terraform-gitlab-project
 root: ./
 # Optional tmux socket
 # socket_name: foo

@@ -1,1 +1,1 @@
-# Welcome to terraform-gitlab-repository documentation
+# Welcome to terraform-gitlab-project documentation

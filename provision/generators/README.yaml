@@ -5,12 +5,12 @@
 #
 
 # Name of this project
-name: terraform-gitlab-repository
+name: terraform-gitlab-project
 
 # Tags of this project
 tags:
   - gitlab
-  - repository
+  - project
 
 # Categories of this project
 categories:
@@ -26,23 +26,23 @@ email:
 license: 'MIT'
 
 # Canonical GitHub repo
-github_repo: hadenlabs/terraform-gitlab-repository
+github_repo: hadenlabs/terraform-gitlab-project
 
 # Badges to display
 badges:
   - name: Lint
-    image: 'https://github.com/hadenlabs/terraform-gitlab-repositoryactions/workflows/lint.yml/badge.svg?branch=develop'
-    url: 'https://github.com/hadenlabs/terraform-gitlab-repository/actions'
+    image: 'https://github.com/hadenlabs/terraform-gitlab-project/actions/workflows/lint.yml/badge.svg?branch=develop'
+    url: 'https://github.com/hadenlabs/terraform-gitlab-project/actions'
   - name: 'Issues'
-    image: 'https://img.shields.io/github/issues/hadenlabs/terraform-gitlab-repository.svg'
-    url: 'https://github.com/hadenlabs/terraform-gitlab-repository/issues'
+    image: 'https://img.shields.io/github/issues/hadenlabs/terraform-gitlab-project.svg'
+    url: 'https://github.com/hadenlabs/terraform-gitlab-project/issues'
   - name: 'Latest Release'
-    image: 'https://img.shields.io/github/release/hadenlabs/terraform-gitlab-repository.svg'
-    url: 'https://github.com/hadenlabs/terraform-gitlab-repository/releases'
+    image: 'https://img.shields.io/github/release/hadenlabs/terraform-gitlab-project.svg'
+    url: 'https://github.com/hadenlabs/terraform-gitlab-project/releases'
 
 # Short description of this project
 description: |-
-  terraform gitlab repository
+  terraform gitlab project
 
 # How to use this project
 usage: |-
@@ -50,14 +50,14 @@ usage: |-
   ```hcl
 
      module "main" {
-        source = "hadenlabs/repository/gitlab"
-        version = "0.0.0"
+        source = "hadenlabs/project/gitlab"
+        version = "0.1.0"
 
         providers = {
           gitlab = gitlab
         }
 
-        name        = "repository-example"
+        name        = "project-example"
         description = "gitlab project"
         visibility  = "public"
     }
