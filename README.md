@@ -12,25 +12,25 @@
 
   -->
 
-# terraform-gitlab-repository
+# terraform-gitlab-project
 
-[![Lint](https://github.com/hadenlabs/terraform-gitlab-repositoryactions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/terraform-gitlab-repository/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/terraform-gitlab-repository.svg)](https://github.com/hadenlabs/terraform-gitlab-repository/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-gitlab-repository.svg)](https://github.com/hadenlabs/terraform-gitlab-repository/releases)
+[![Lint](https://github.com/hadenlabs/terraform-gitlab-project/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/terraform-gitlab-project/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/terraform-gitlab-project.svg)](https://github.com/hadenlabs/terraform-gitlab-project/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-gitlab-project.svg)](https://github.com/hadenlabs/terraform-gitlab-project/releases)
 
-terraform gitlab repository
+terraform gitlab project
 
 ## Usage
 
 ```hcl
 
    module "main" {
-      source = "hadenlabs/repository/gitlab"
-      version = "0.0.0"
+      source = "hadenlabs/project/gitlab"
+      version = "0.1.0"
 
       providers = {
         gitlab = gitlab
       }
 
-      name        = "repository-example"
+      name        = "project-example"
       description = "gitlab project"
       visibility  = "public"
   }
@@ -46,14 +46,14 @@ Full working example can be found in [example](./example) folder.
 ```hcl
 
   module "main" {
-      source = "hadenlabs/repository/gitlab"
-      version = "0.0.0"
+      source = "hadenlabs/project/gitlab"
+      version = "0.1.0"
 
       providers = {
         gitlab = gitlab
       }
 
-      name        = "repository-example"
+      name        = "project-example"
       description = "gitlab project"
       visibility  = "public"
   }
@@ -64,7 +64,7 @@ Full working example can be found in [example](./example) folder.
 
 # Terraform variables
 
-This document gives an overview of variables used in the platform of the terraform-gitlab-repository.
+This document gives an overview of variables used in the platform of the terraform-gitlab-project.
 
 ## Requirements
 
@@ -84,11 +84,11 @@ This document gives an overview of variables used in the platform of the terrafo
 
 | Name | Description | Type | Default | Required |
 | --- | --- | --- | --- | :-: |
-| description | The description of the repository. | `string` | n/a | yes |
-| name | The name of the repository. | `string` | n/a | yes |
+| description | The description of the project. | `string` | n/a | yes |
+| name | The name of the project. | `string` | n/a | yes |
 | settings | Create and manage settings. | `map(any)` | `{}` | no |
 | tags | topics or tags of project. | `list(string)` | `[]` | no |
-| visibility | The visibility of the repository private or public. | `string` | `"private"` | no |
+| visibility | The visibility of the project private or public. | `string` | `"private"` | no |
 
 ## Outputs
 
@@ -100,13 +100,13 @@ This document gives an overview of variables used in the platform of the terrafo
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/hadenlabs/terraform-gitlab-repository/issues), send us an [email](email) or join our [Slack Community](slack).
+File a GitHub [issue](https://github.com/hadenlabs/terraform-gitlab-project/issues), send us an [email](email) or join our [Slack Community](slack).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/hadenlabs/terraform-gitlab-repository/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/hadenlabs/terraform-gitlab-project/issues) to report any bugs or file feature requests.
 
 ### Development
 
@@ -136,6 +136,6 @@ All other trademarks referenced herein are the property of their respective owne
 
 The code and styles are licensed under the MIT license [See project license.](LICENSE).
 
-## Don't forget to 🌟 Star 🌟 the repo if you like terraform-gitlab-repository
+## Don't forget to 🌟 Star 🌟 the repo if you like terraform-gitlab-project
 
-[Your feedback is appreciated](https://github.com/hadenlabs/terraform-gitlab-repository/issues)
+[Your feedback is appreciated](https://github.com/hadenlabs/terraform-gitlab-project/issues)
