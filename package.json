@@ -1,6 +1,6 @@
 {
   "name": "terraform-gitlab-project",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "terraform gitlab project",
   "repository": "ssh://git@github.com/hadenlabs/terraform-gitlab-project.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
