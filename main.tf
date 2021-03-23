@@ -44,6 +44,8 @@ resource "gitlab_project" "this" {
 
   tags = var.tags
 
+  namespace_id = var.namespace_id
+
   lifecycle {
     prevent_destroy = true
     ignore_changes = [
