@@ -24,7 +24,7 @@ terraform gitlab project
 
    module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.1.1"
+      version = "0.2.0"
 
       providers = {
         gitlab = gitlab
@@ -47,7 +47,7 @@ Full working example can be found in [example](./example) folder.
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.1.1"
+      version = "0.2.0"
 
       providers = {
         gitlab = gitlab
@@ -72,7 +72,7 @@ Full working example can be found in [example](./example) folder.
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.1.1"
+      version = "0.2.0"
 
       providers = {
         gitlab = gitlab
@@ -96,7 +96,7 @@ Full working example can be found in [example](./example) folder.
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.1.1"
+      version = "0.2.0"
 
       providers = {
         gitlab = gitlab
