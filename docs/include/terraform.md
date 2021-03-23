@@ -21,6 +21,7 @@ This document gives an overview of variables used in the platform of the terrafo
 |------|-------------|------|---------|:--------:|
 | description | The description of the project. | `string` | n/a | yes |
 | name | The name of the project. | `string` | n/a | yes |
+| namespace_id | The namespace (group or user) of the project. | `string` | `null` | no |
 | settings | Create and manage settings. | `map(any)` | `{}` | no |
 | tags | topics or tags of project. | `list(string)` | `[]` | no |
 | visibility | The visibility of the project private or public. | `string` | `"private"` | no |
