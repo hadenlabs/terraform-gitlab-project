@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/python,node,go,terraform
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,node,go,terraform
+# Created by https://www.toptal.com/developers/gitignore/api/python,node,go,terraform,zsh
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,node,go,terraform,zsh
 
 ### Go ###
 # Binaries for programs and plugins
@@ -322,4 +322,34 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 
-# End of https://www.toptal.com/developers/gitignore/api/python,node,go,terraform
+### Zsh ###
+# Zsh compiled script + zrecompile backup
+*.zwc
+*.zwc.old
+
+# Zsh completion-optimization dumpfile
+*zcompdump*
+
+# Zsh zcalc history
+.zcalc_history
+
+# A popular plugin manager's files
+._zinit
+.zinit_lstupd
+
+# zdharma/zshelldoc tool's files
+zsdoc/data
+
+# robbyrussell/oh-my-zsh/plugins/per-directory-history plugin's files
+# (when set-up to store the history in the local directory)
+.directory_history
+
+# MichaelAquilina/zsh-autoswitch-virtualenv plugin's files
+# (for Zsh plugins using Python)
+.venv
+
+# Zunit tests' output
+/tests/_output/*
+!/tests/_output/.gitkeep
+
+# End of https://www.toptal.com/developers/gitignore/api/python,node,go,terraform,zsh
