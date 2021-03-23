@@ -14,6 +14,12 @@ variable "visibility" {
   default     = "private"
 }
 
+variable "namespace_id" {
+  type        = string
+  description = "The namespace (group or user) of the project."
+  default     = null
+}
+
 variable "settings" {
   type        = map(any)
   description = "Create and manage settings."
