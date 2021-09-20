@@ -15,7 +15,7 @@ locals {
     only_allow_merge_if_all_discussions_are_resolved = false
     initialize_with_readme                           = false
     packages_enabled                                 = true
-
+    import_url                                       = ""
   }
 
   settings = merge(local.default_settings, try(var.settings, {}))
@@ -27,6 +27,7 @@ resource "gitlab_project" "this" {
   visibility_level = var.visibility
 
   mirror                                           = local.settings.mirror
+  import_url                                       = local.settings.import_url
   default_branch                                   = local.settings.default_branch
   issues_enabled                                   = local.settings.issues_enabled
   merge_requests_enabled                           = local.settings.merge_requests_enabled
@@ -47,12 +48,11 @@ resource "gitlab_project" "this" {
   namespace_id = var.namespace_id
 
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
     ignore_changes = [
       default_branch,
       issues_enabled,
       description
     ]
   }
-
 }
