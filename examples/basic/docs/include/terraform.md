@@ -14,7 +14,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_main"></a> [main](#module\_main) | git://github.com/hadenlabs/terraform-gitlab-project.git | 0.2.0 |
+| <a name="module_main"></a> [main](#module\_main) | ../.. | n/a |
 
 ## Resources
 
