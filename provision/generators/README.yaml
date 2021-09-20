@@ -23,22 +23,35 @@ email:
 #logo: docs/logo.png
 
 # License of this project
-license: 'MIT'
+license: 'LGPL-3.0'
 
 # Canonical GitHub repo
 github_repo: hadenlabs/terraform-gitlab-project
 
 # Badges to display
 badges:
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/terraform-gitlab-project
+    url: https://github.com/hadenlabs/terraform-gitlab-project/releases
   - name: Lint
-    image: 'https://github.com/hadenlabs/terraform-gitlab-project/actions/workflows/lint.yml/badge.svg?branch=develop'
-    url: 'https://github.com/hadenlabs/terraform-gitlab-project/actions'
-  - name: 'Issues'
-    image: 'https://img.shields.io/github/issues/hadenlabs/terraform-gitlab-project.svg'
-    url: 'https://github.com/hadenlabs/terraform-gitlab-project/issues'
-  - name: 'Latest Release'
-    image: 'https://img.shields.io/github/release/hadenlabs/terraform-gitlab-project.svg'
-    url: 'https://github.com/hadenlabs/terraform-gitlab-project/releases'
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-gitlab-project/lint-code
+    url: https://github.com/hadenlabs/terraform-gitlab-project/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    url: https://keepachangelog.com
+
+requirements: |-
+
+  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
 
 # Short description of this project
 description: |-
