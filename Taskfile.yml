@@ -13,10 +13,14 @@ includes:
   sonar: ./provision/task/sonar.yml
 
 env:
+  DOCKER:
+    sh: docker --version 2> /dev/null || echo "not exist"
   PYTHON:
-    sh: python --version
+    sh: python --version 2> /dev/null || echo "not exist"
   GO:
-    sh: go version
+    sh: go version 2> /dev/null || echo "not exist"
+  NODE:
+    sh: node --version 2> /dev/null || echo "not exist"
   APP_TAG:
     sh: git describe --tags $(git rev-list --tags --max-count=1) 2> /dev/null || echo "0.0.0"
   README_YAML: provision/generators/README.yaml
@@ -56,6 +60,9 @@ tasks:
     desc: 'Summary information'
     cmds:
       - echo Go available {{.GO}}
+      - echo Python available {{.PYTHON}}
+      - echo Docker available {{.DOCKER}}
+      - echo Node available {{.NODE}}
     silent: true
 
   check:
