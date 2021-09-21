@@ -31,7 +31,7 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 
    module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.3.0"
+      version = "0.3.1"
 
       providers = {
         gitlab = gitlab
@@ -54,7 +54,7 @@ Full working example can be found in [examples](./examples) folder.
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.3.0"
+      version = "0.3.1"
 
       providers = {
         gitlab = gitlab
@@ -79,7 +79,7 @@ Full working example can be found in [examples](./examples) folder.
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.3.0"
+      version = "0.3.1"
 
       providers = {
         gitlab = gitlab
@@ -103,7 +103,7 @@ Full working example can be found in [examples](./examples) folder.
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.3.0"
+      version = "0.3.1"
 
       providers = {
         gitlab = gitlab
