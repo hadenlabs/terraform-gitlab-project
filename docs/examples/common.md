@@ -4,7 +4,7 @@
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.3.0"
+      version = "0.3.1"
 
       providers = {
         gitlab = gitlab
@@ -29,7 +29,7 @@
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.3.0"
+      version = "0.3.1"
 
       providers = {
         gitlab = gitlab
@@ -53,7 +53,7 @@
 
   module "main" {
       source = "hadenlabs/project/gitlab"
-      version = "0.3.0"
+      version = "0.3.1"
 
       providers = {
         gitlab = gitlab
