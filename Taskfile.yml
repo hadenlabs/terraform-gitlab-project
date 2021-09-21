@@ -13,10 +13,10 @@ includes:
   sonar: ./provision/task/sonar.yml
 
 env:
-  DOCKER:
-    sh: docker -v
   PYTHON:
     sh: python --version
+  GO:
+    sh: go version
   APP_TAG:
     sh: git describe --tags $(git rev-list --tags --max-count=1) 2> /dev/null || echo "0.0.0"
   README_YAML: provision/generators/README.yaml
@@ -55,7 +55,7 @@ tasks:
   summary:
     desc: 'Summary information'
     cmds:
-      - echo Docker available {{.DOCKER}}
+      - echo Go available {{.GO}}
     silent: true
 
   check:
