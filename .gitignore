@@ -143,6 +143,10 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+### Node Patch ###
+# Serverless Webpack directories
+.webpack/
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -349,6 +353,7 @@ zsdoc/data
 
 # End of https://www.toptal.com/developers/gitignore/api/python,node,go,zsh,sonar,terraform
 # custom git ignore files
+*.lock.hcl
 .scannerwork
 .secrets
 .task
