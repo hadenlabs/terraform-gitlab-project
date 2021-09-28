@@ -19,6 +19,10 @@ categories:
 email:
   support: support@hadenlabs.com
 
+confluence:
+  space: TerraformGitlabProject
+  title: Project
+
 # Logo for this project
 #logo: docs/logo.png
 
@@ -36,6 +40,12 @@ badges:
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-gitlab-project/lint-code
     url: https://github.com/hadenlabs/terraform-gitlab-project/actions?workflow=lint-code
+  - name: CI
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-gitlab-project/ci
+    url: https://github.com/hadenlabs/terraform-gitlab-project/actions?workflow=ci
+  - name: Test
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-gitlab-project/test
+    url: https://github.com/hadenlabs/terraform-gitlab-project/actions?workflow=test
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
@@ -50,12 +60,15 @@ requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
+  - [Pyenv](https://github.com/pyenv/pyenv)
+  - [Docker](https://www.docker.com/)
   - [python](https://www.python.org)
   - [taskfile](https://github.com/go-task/task)
 
 # Short description of this project
 description: |-
-  terraform gitlab project
+
+  terraform-gitlab-project for gitlab
 
 # How to use this project
 usage: |-
