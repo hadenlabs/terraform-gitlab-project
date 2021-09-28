@@ -8,15 +8,16 @@ import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
 )
 
-func TestProjectWithBasic(t *testing.T) {
+func TestProjectWithGroupBasic(t *testing.T) {
 	gitlabAccessToken := os.Getenv("GITLAB_ACCESS_TOKEN")
 
 	terraformOptions := &terraform.Options{
 		// The path to where your Terraform code is located
-		TerraformDir: "project-basic",
+		TerraformDir: "project-basic-group",
 		Upgrade:      true,
 		Vars: map[string]interface{}{
 			"name":         "test-project-repo",
+			"group_name":   "hadenlabs-test",
 			"gitlab_token": gitlabAccessToken,
 		},
 	}
