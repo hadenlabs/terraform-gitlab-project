@@ -1,3 +1,7 @@
+<!-- Space: TerraformGitlabProject -->
+<!-- Parent: Project -->
+<!-- Title: Troubleshooting -->
+
 # Troubleshooting
 
 ## Environment
