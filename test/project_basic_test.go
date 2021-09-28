@@ -18,7 +18,6 @@ func TestProjectWithBasic(t *testing.T) {
 		Upgrade:      true,
 		Vars: map[string]interface{}{
 			"name":         "test-project-repo",
-			"namespace_id": "luismayta",
 			"gitlab_token": gitlabAccessToken,
 		},
 	}
